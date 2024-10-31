@@ -61,20 +61,6 @@ System.out.println("~");
 
 // } Driver Code Ends
 
-
-
-
-/*class of the node of the DLL is as
-/*
-class Node {
-    int data;
-    Node prev, next;
-    Node(int data) {
-        this.data = data;
-        this.prev = this.next = null;
-    }
-}
-*/
 class Solution {
     public Node sortedInsert(Node head, int x) {
         // add your code here
@@ -93,3 +79,9 @@ class Solution {
         return head;
     }
 }
+
+
+
+
+
+
