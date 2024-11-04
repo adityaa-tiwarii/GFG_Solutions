@@ -6,6 +6,7 @@ import java.util.*;
 
 // } Driver Code Ends
 // User function Template for Java
+// User function Template for Java
 
 class Solution {
     public List<List<Integer>> findTriplets(int[] arr) {
@@ -34,8 +35,6 @@ class Solution {
         return ans;
     }
 }
-
-
 
 //{ Driver Code Starts.
 
