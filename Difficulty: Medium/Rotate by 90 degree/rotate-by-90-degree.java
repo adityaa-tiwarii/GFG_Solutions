@@ -35,13 +35,11 @@ class DriverClass {
 // } Driver Code Ends
 
 
-
-
 // User function Template for Java
 
 class GFG {
     static void rotate(int mat[][]) {
-        // Code Here
+        
                int n = mat.length;
 
         // Initialize the result matrix with zeros
