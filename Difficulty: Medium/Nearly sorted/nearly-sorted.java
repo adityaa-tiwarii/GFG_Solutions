@@ -8,6 +8,7 @@ import java.util.*;
 
 // } Driver Code Ends
 // User function Template for Java
+// User function Template for Java
 class Solution {
     // Non-static method, so you need to call it on an instance of the class
     public void nearlySorted(int[] arr, int k) {
@@ -15,8 +16,6 @@ class Solution {
         Arrays.sort(arr);
     }
 }
-
-
 
 //{ Driver Code Starts.
 class GFG {
