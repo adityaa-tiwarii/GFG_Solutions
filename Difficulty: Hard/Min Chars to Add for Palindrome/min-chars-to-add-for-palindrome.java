@@ -9,6 +9,8 @@ import java.util.*;
 // } Driver Code Ends
 // User function Template for Java
 
+// User function Template for Java
+
 class Solution {
         public static int[] computeLPS(String s){
         int n = s.length();
@@ -47,7 +49,6 @@ class Solution {
         return s.length() - lps[lps.length - 1];
     }
 }
-
 
 //{ Driver Code Starts.
 
