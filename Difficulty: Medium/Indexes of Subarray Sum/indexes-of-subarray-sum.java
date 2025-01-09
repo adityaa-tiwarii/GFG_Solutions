@@ -31,10 +31,6 @@ class Main {
 
 // } Driver Code Ends
 
-
-
-
-
 class Solution {
     static ArrayList<Integer> subarraySum(int[] arr, int target) {
         // code here
@@ -47,3 +43,5 @@ class Solution {
         return new ArrayList<>(Arrays.asList(-1));
     }
 }
+
+
