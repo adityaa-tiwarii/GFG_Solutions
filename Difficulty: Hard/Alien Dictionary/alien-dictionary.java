@@ -5,13 +5,11 @@ import java.util.*;
 
 // } Driver Code Ends
 
-
-
-
-//User function Template for Java
-
+// User function Template for Java
 class Solution {
-    public String findOrder(String[] words) {
+   
+        // code here
+        public String findOrder(String[] words) {
         // Step 1: Create a graph
         Map<Character, List<Character>> graph = new HashMap<>();
         Map<Character, Integer> inDegree = new HashMap<>();
@@ -75,8 +73,7 @@ class Solution {
         
         return order.toString();
     }
-}
-
+    }
 
 
 
