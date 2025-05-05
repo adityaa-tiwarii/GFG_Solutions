@@ -5,6 +5,7 @@ import java.util.*;
 
 // } Driver Code Ends
 
+// User function Template for Java
 class Solution {
     public int findTarget(int arr[], int target) {
         // code here
