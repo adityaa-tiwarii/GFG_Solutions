@@ -116,22 +116,6 @@ class Matrix {
 
 // } Driver Code Ends
 
-/*
-
-Definition for Binary Tree Node
-struct Node
-{
-    int data;
-    struct Node* left;
-    struct Node* right;
-
-    Node(int x){
-        data = x;
-        left = right = NULL;
-    }
-};
-*/
-
 class Solution {
   public:
     void solve(Node* root, vector<vector<int>> &ans, vector<int> &list)
@@ -157,11 +141,6 @@ class Solution {
         
     }
 };
-
-
-
-//{ Driver Code Starts.
-
 
 
 
