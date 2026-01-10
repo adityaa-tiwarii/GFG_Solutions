@@ -1,29 +1,27 @@
 class Solution {
-    public int countSubstr(String s, int k) {
-        return helper(s, k) - helper(s, k - 1);
-    }
+    public int atMost(String s, int k) {
+        // code here
+        HashMap<Character, Integer> map = new HashMap<>();
+        int l = 0, r = 0, cnt = 0;
+        int n = s.length();
 
-    private int helper(String s, int k) {
-        int left = 0, right = 0, count = 0, distinctCount = 0;
-        int[] freq = new int[256]; // Array for character frequency (assuming ASCII)
+        while (l < n) {
+            map.put(s.charAt(l), map.getOrDefault(s.charAt(l), 0) + 1);
 
-        while (right < s.length()) {
-            if (freq[s.charAt(right)] == 0) {
-                distinctCount++; // New distinct character
-            }
-            freq[s.charAt(right)]++;
-
-            while (distinctCount > k) {
-                freq[s.charAt(left)]--;
-                if (freq[s.charAt(left)] == 0) {
-                    distinctCount--; // Remove distinct character
-                }
-                left++;
+            while (map.size() > k) {
+                map.put(s.charAt(r), map.get(s.charAt(r)) - 1);
+                if (map.get(s.charAt(r)) == 0)
+                    map.remove(s.charAt(r));
+                r++;
             }
 
-            count += right - left + 1;
-            right++;
+            cnt += l - r + 1;
+            l++;
         }
-        return count;
+        return cnt;
     }
+    public int countSubstr(String s, int k){
+        return atMost(s,k)- atMost(s,k-1);
+    }
+    
 }
